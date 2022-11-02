@@ -116,6 +116,12 @@ section.credits{
 section.credits{
     background-color:#333333 ;
     color: white;
+
+}
+
+.credits-section{
+    width: 440px;
+    margin: auto;
 }
 
 .motto-credits{
@@ -164,6 +170,11 @@ section.credits{
         
     }
 
+    .credits-section{
+        width: 333px;
+        margin: auto;
+        padding: 0;
+    }
 
 }
 
@@ -195,5 +206,9 @@ section.credits{
     .benefits-card{
         width: calc((100% / 3) - 2rem);
         margin: 1rem;
+    }
+
+    .credits-section{
+        padding: 0;
     }
 }
