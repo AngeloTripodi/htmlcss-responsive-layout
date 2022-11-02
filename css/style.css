@@ -17,16 +17,6 @@ header{
     display: flex;
 }
 
-.flex-center{
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-
-
 .flex-space-between{
     justify-content: space-between;
     align-items: center;
@@ -48,6 +38,11 @@ header{
 /* MAIN */
 
 .card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
     background-color: #b5ddff;
     margin-bottom: 2rem;
     border-radius: 20px;
@@ -75,6 +70,22 @@ header{
 .benefits-card:last-child{
     margin-bottom: 0;
 } */
+
+.sp-section,
+.cards,
+.benefits-cards{
+    flex-direction: column;
+}
+
+.sp-card,
+.testimonials-card,
+.benefits-card,
+.about-us-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 .white{ 
@@ -109,4 +120,80 @@ section.credits{
 
 .motto-credits{
     padding-bottom: 4rem;
+}
+
+/* ! RESPONSIVE */
+
+@media screen and (min-width:768px) {
+   
+    .card{
+        width: calc((100% / 3) - 2rem);
+        margin: 0 1rem;
+    } 
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .card:first-child{
+        margin-top: 0;
+        width: calc((100% / 3 *2) - 2rem) ;
+        margin-bottom: 2rem;
+    }
+
+    .card:last-child{
+        margin-bottom: 0;
+    }
+
+    .benefits-card{
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+
+    .benefits-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-us-section{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+
+}
+
+
+
+@media screen and (min-width:992px) {
+
+    .container{
+        padding: 0 10rem;
+    }
+
+    .sp-img-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 50%;
+    }
+
+    .sp-section{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 15rem;
+    }
+
+    .sp-card{
+        flex-basis: 50%;
+    }
+
+    .benefits-card{
+        width: calc((100% / 3) - 2rem);
+        margin: 1rem;
+    }
 }
