@@ -1,4 +1,7 @@
-*{
+*,
+*::after,
+*::before
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,19 +17,47 @@ header{
     display: flex;
 }
 
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
 .flex-space-between{
     justify-content: space-between;
     align-items: center;
 }
 
 .container{
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 
 
-/* HEADER */
+/*  HEADER  */
 
 .header-section{
     height: 100%;
+}
+
+
+/* MAIN */
+
+.card{
+    background-color: #b5ddff;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.card:first-child{
+    margin-top: 4rem;
+}
+
+.card:last-child{
+    margin-bottom: 6rem;
 }
