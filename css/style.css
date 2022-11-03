@@ -10,8 +10,12 @@
 header{
     background-color: #0084fd;
     height: 85px;
+    color: white;
 }
 
+body{
+    font-family: 'Lato', sans-serif;
+}
 
 .flex{
     display: flex;
@@ -34,6 +38,21 @@ header{
     height: 100%;
 }
 
+ul.ul-menu{
+    display: flex;
+}
+
+ul.ul-menu li{
+    list-style-type: none;
+}
+
+.fa-bars{
+    font-size: 2rem;
+}
+
+li.link-desktop{
+    display: none;
+}
 
 /* MAIN */
 
@@ -211,4 +230,28 @@ section.credits{
     .credits-section{
         padding: 0;
     }
+
+    .ul-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    li#hamburger{
+        display: none;
+    }
+
+    li.link-desktop{
+        display: inline-block;
+        margin-left: 2rem;
+        
+    }
+
+    #button-header{
+        background-color: white;
+        border-radius: 20px;
+        color: black;
+        padding: .5rem 1rem .5rem 1rem;
+    }
+
+
 }

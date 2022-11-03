@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <header>
         <div class="header-section container flex flex-space-between">
             <div class="logo">
-            logo       
+            <img src="./img/logo.png" alt="Logo">       
             </div>
             
             <nav class="menu">
-                hamburger
+                <ul class="ul-menu">
+                    <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
+                    <li class="link-desktop">Planning</li>
+                    <li class="link-desktop">Testimonials</li>
+                    <li class="link-desktop">Features</li>
+                    <li class="link-desktop">About Us</li>
+                    <li id="button-header" class="link-desktop">Get Started</li>
+                    
+                </ul>
             </nav>
         </div>
     </header>
