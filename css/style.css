@@ -45,9 +45,6 @@ body{
 }
 
 
-
-/*  HEADER  */
-
 .header-section{
     height: 100%;
 }
@@ -143,9 +140,16 @@ li.link-desktop{
 
 #img-card,
 .sp-card h2,
-.sp-card p
+.sp-card p,
+.testimonials-text p,
+.testimonials-text h1
 {
     padding-bottom: 2rem;
+}
+
+.testimonials-text h1{
+    color: var(--bg-color);
+    font-size: 1.8rem;
 }
 
 .sp-card p{
@@ -205,6 +209,30 @@ li.link-desktop{
 
 .sp-text{
     padding-bottom: 3rem;
+    color: white;
+}
+
+
+.rounded{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+quote{
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.testimonials-card {
     color: white;
 }
 
@@ -301,7 +329,16 @@ section.credits{
         text-align: left;
     }
 
+    .testimonials-card{
+        flex-direction: row;
+    }
     
+    figure{
+        margin-right: 2rem;
+        width: 160px;
+        min-width: 160px;
+    }
+
 }
 
 
