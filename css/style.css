@@ -175,6 +175,7 @@ li.link-desktop{
     color: white;
     padding-top: 2rem;
     padding-bottom: 5rem;
+    line-height: 3rem;
 }
 
 .sp-card p{
@@ -307,10 +308,13 @@ figure img{
 
 .lilla,
 section.benefits,
-.strategic-planning,
-section.get-started{
+.strategic-planning{
     background-color: #9792e4;
     margin-bottom:1rem;
+}
+
+section.get-started{
+    background-color: var(--bg-color);
 }
 
 section.strategic-planning,
@@ -327,19 +331,55 @@ section.credits{
     text-align: center;
 }
 
+.content-get-started h3{
+    color: rgb(230, 230, 230);
+    font-weight: 300;
+    padding-bottom: 1.25rem;
+}
+
+.content-get-started h2 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+    line-height: 3rem;
+}
+
+.content-get-started h1{
+    color: #fdc15f;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-bottom: 2.5rem;
+}
+
+.content-get-started p{
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+.content-get-started button{
+    color: var(--bg-color);
+    background-color: white;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 1.5rem;
+}
+
 section.credits{
     background-color:#333333 ;
     color: white;
 
 }
 
-.credits-section{
-    width: 440px;
-    margin: auto;
-}
-
 .motto-credits{
     padding-bottom: 4rem;
+}
+
+.link-credits u{
+    color: var(--bg-color);
 }
 
 /* ! RESPONSIVE */
@@ -417,6 +457,16 @@ section.credits{
         padding-top: 0;
         padding-bottom: 1rem;
         text-align: left;
+    }
+
+    .content-get-started p{
+        width: 600px;
+        margin: auto;
+        }
+
+    .credits-section{
+            width: 420px;
+            margin: auto;
     }
 }
 
