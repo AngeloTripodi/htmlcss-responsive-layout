@@ -24,7 +24,7 @@ header{
 body{
     font-family: 'Lato', sans-serif;
     word-spacing: 3px; 
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .flex{
@@ -98,8 +98,6 @@ li.link-desktop{
     font-weight: 600;
 }
 
-/* MAIN */
-
 .card-content{
     width: 100%;
 }
@@ -139,15 +137,30 @@ li.link-desktop{
 .testimonials-card,
 .benefits-card{
     border-radius: 20px;
-    height: 300px;
     margin-bottom: 2rem;
+    padding: 2rem;
 }
 
-/* .sp-card:last-child,
-.testimonials-card:last-child,
-.benefits-card:last-child{
-    margin-bottom: 0;
-} */
+#img-card,
+.sp-card h2,
+.sp-card p
+{
+    padding-bottom: 2rem;
+}
+
+.sp-card p{
+    font-style: italic;
+}
+
+.fa-arrow-down{
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+}
+
+#img-card{
+    width: 100%;
+}
 
 .sp-section,
 .cards,
@@ -173,6 +186,28 @@ li.link-desktop{
 .white{ 
     background-color: white;
 }
+
+.sp-img-text{
+    width: 100%;
+}
+
+.sp-img-text img{
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+}
+
+.strategic-planning h1{
+    color: white;    
+    padding-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.sp-text{
+    padding-bottom: 3rem;
+    color: white;
+}
+
 
 .lilla,
 section.benefits,
@@ -282,12 +317,18 @@ section.credits{
         flex-direction: column;
         justify-content: space-between;
         flex-basis: 50%;
+        margin-right: 5rem;
     }
 
     .sp-section{
         flex-direction: row;
-        justify-content: space-around;
         padding: 0 15rem;
+        align-items: flex-end;
+    }
+
+    .strategic-planning h1{
+  
+      font-size: 2rem;
     }
 
     .sp-card{
@@ -348,6 +389,10 @@ section.credits{
         text-align: center;
         vertical-align: bottom;
         display: grid;
+    }
+
+    #img-card{
+        width: 70%;
     }
 
 }
