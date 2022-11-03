@@ -7,14 +7,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #0084fd;
+    --bg-color: #9792e4;
+    --secondary-bg-color: #b5ddff;
+    --font-gray-color: #4c5b69;
+}
+
+
 header{
-    background-color: #0084fd;
+    background-color: var(--main-color);
     height: 85px;
     color: white;
 }
 
 body{
     font-family: 'Lato', sans-serif;
+    word-spacing: 3px; 
+    line-height: 1.5rem;
 }
 
 .flex{
@@ -24,6 +34,10 @@ body{
 .flex-space-between{
     justify-content: space-between;
     align-items: center;
+}
+
+.center{
+    text-align: center;
 }
 
 .container{
@@ -54,7 +68,41 @@ li.link-desktop{
     display: none;
 }
 
+.card-content h2{
+    color: var(--main-color);
+    padding-bottom: 2rem;
+
+}
+
+.card-content p{
+    color: var(--font-gray-color) ;
+}
+
+.card-content p:first-child{
+    padding-bottom: 2rem;
+}
+
+.button{
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 3rem .5rem 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.blue{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
 /* MAIN */
+
+.card-content{
+    width: 100%;
+}
 
 .card{
     flex-direction: column;
@@ -65,11 +113,22 @@ li.link-desktop{
     background-color: #b5ddff;
     margin-bottom: 2rem;
     border-radius: 20px;
-    height: 400px;
+    padding: 2rem;
+    
+    
+}
+
+.img-card img{
+    width: 80%;
+}
+
+.img-card{
+    text-align: center;
 }
 
 .card:first-child{
     margin-top: 4rem;
+    padding: 2rem 1.5rem 0 1.5rem;
 }
 
 .card:last-child{
@@ -105,7 +164,11 @@ li.link-desktop{
     justify-content: center;
 }
 
-
+.big-icon{
+    color: var(--main-color);
+    font-size: 6rem;
+    padding-bottom: 2rem;
+}
 
 .white{ 
     background-color: white;
@@ -153,7 +216,7 @@ section.credits{
    
     .card{
         width: calc((100% / 3) - 2rem);
-        margin: 0 1rem;
+        margin: 0 1rem 2rem 1rem;
     } 
 
     .cards{
@@ -166,11 +229,11 @@ section.credits{
     .card:first-child{
         margin-top: 0;
         width: calc((100% / 3 *2) - 2rem) ;
-        margin-bottom: 2rem;
+        
     }
 
     .card:last-child{
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     .benefits-card{
@@ -195,6 +258,15 @@ section.credits{
         padding: 0;
     }
 
+    .img-card img{
+        width: 60%;
+    }
+    
+    .img-card{
+        text-align: left;
+    }
+
+    
 }
 
 
@@ -253,5 +325,29 @@ section.credits{
         padding: .5rem 1rem .5rem 1rem;
     }
 
+    .double{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-card{
+        align-content: flex-end;
+    }
+
+    .img-card img{
+        width: 60%;
+
+    }
+    
+    .text-card{
+        flex-basis: 50%;
+    }
+
+    .img-card{
+        flex-basis: 50%;
+        text-align: center;
+        vertical-align: bottom;
+        display: grid;
+    }
 
 }
