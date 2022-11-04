@@ -534,14 +534,10 @@ section.credits{
     .double{
         display: flex;
         flex-direction: row;
-    }
-
-    .img-card{
-        align-content: flex-end;
-    }
+    } 
 
     .img-card img{
-        width: 60%;
+        width: 75%;
 
     }
     
@@ -551,9 +547,9 @@ section.credits{
 
     .img-card{
         flex-basis: 50%;
-        text-align: center;
-        vertical-align: bottom;
-        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     #img-card{
